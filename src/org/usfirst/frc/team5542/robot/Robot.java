@@ -47,7 +47,7 @@ public class Robot extends IterativeRobot {
 		//chooser.addObject("Rock Auto", auto);
 		//chooser.addObject("Low auto", auto);
 		//chooser.addObject("Moat Auto", auto);
-		//
+		//Smart
 		
 		
 		
