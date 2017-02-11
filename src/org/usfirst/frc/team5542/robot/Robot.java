@@ -1,9 +1,9 @@
 
 package org.usfirst.frc.team5542.robot;
 
-import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
 import org.usfirst.frc.team5542.robot.subsystems.DriveTrain;
 
+import edu.wpi.first.wpilibj.CameraServer;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
@@ -25,6 +25,8 @@ public class Robot extends IterativeRobot {
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
+	public static AutoBase auto;
+	
 	
 	/**
 	 * This function is run when the robot is first started up and should be
@@ -39,16 +41,17 @@ public class Robot extends IterativeRobot {
 		//UsbCamera camera = new UsbCamera("camera", 0);
 		//camera.setFPS(11);
 		//camera.setSize(320, 240);
-		//CameraServer server = CameraServer.getInstance();
-		//server.setQuality(10);
-		//server.startAutomaticCapture(camera);
-		//chooser = new SendableChooser();
-		//chooser.addObject("Rock Auto", auto);
-		//chooser.addObject("Low auto", auto);
-		//chooser.addObject("Moat Auto", auto);
-		//Smart
+		CameraServer server = CameraServer.getInstance();
+		server.setQuality(10);
+		server.startAutomaticCapture(camera);
+		chooser = new SendableChooser();
+		chooser.addObject("Rock Auto", auto);
+		chooser.addObject("Low auto", auto);
+		chooser.addObject("Moat Auto", auto);
+		SmartDashboard.putData("Auto mode", chooser);
+			
 		
-		
+}		
 		
 		
 		
