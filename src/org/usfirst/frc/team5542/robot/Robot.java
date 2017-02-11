@@ -1,15 +1,16 @@
 
 package org.usfirst.frc.team5542.robot;
 
+import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
+import org.usfirst.frc.team5542.robot.subsystems.ExampleSubsystem;
+
+import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
 import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-
-import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
-import org.usfirst.frc.team5542.robot.subsystems.ExampleSubsystem;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -25,14 +26,25 @@ public class Robot extends IterativeRobot {
 
 	Command autonomousCommand;
 	SendableChooser<Command> chooser = new SendableChooser<>();
-
+	
 	/**
 	 * This function is run when the robot is first started up and should be
 	 * used for any initialization code.
 	 */
+	
+	
 	@Override
 	public void robotInit() {
-		oi = new OI();
+		//CommandBase.init();
+			oi = new OI();
+		//UsbCamera camera = new UsbCamera("camera", 0);
+		//camera.setFPS(11);
+		//camera.setSize(320, 240);
+		
+		
+		
+		
+		
 		chooser.addDefault("Default Auto", new ExampleCommand());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
