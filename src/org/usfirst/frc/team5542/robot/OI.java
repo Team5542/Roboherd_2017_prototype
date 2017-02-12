@@ -37,6 +37,16 @@ public class OI {
 	public static final int rTrigger = 3;
 	public static final int lTrigger = 2;
 	public static final int dPad = 0;
+	
+	public Joystick getXbox(){
+		return xbox;
+	}
+	
+	public Joystick getStick() {
+		return stick;
+	}
+	
+	
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
 	//// joystick.

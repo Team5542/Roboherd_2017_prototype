@@ -2,7 +2,7 @@
 package org.usfirst.frc.team5542.robot;
 
 import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
-import org.usfirst.frc.team5542.robot.subsystems.ExampleSubsystem;
+import org.usfirst.frc.team5542.robot.subsystems.DriveTrain;
 
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.wpilibj.IterativeRobot;
@@ -21,7 +21,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
  */
 public class Robot extends IterativeRobot {
 
-	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
+	public static final DriveTrain exampleSubsystem = new DriveTrain();
 	public static OI oi;
 
 	Command autonomousCommand;
