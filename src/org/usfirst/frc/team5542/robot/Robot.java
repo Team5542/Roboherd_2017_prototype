@@ -4,7 +4,6 @@ package org.usfirst.frc.team5542.robot;
 import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
 import org.usfirst.frc.team5542.robot.subsystems.DriveTrain;
 
-import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.wpilibj.IterativeRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
