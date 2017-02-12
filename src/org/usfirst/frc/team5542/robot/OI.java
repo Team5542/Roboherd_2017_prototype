@@ -1,5 +1,9 @@
 package org.usfirst.frc.team5542.robot;
 
+import edu.wpi.first.wpilibj.Joystick;
+import edu.wpi.first.wpilibj.buttons.Button;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+
 //import edu.wpi.first.wpilibj.buttons.Button;
 
 //import org.usfirst.frc.team5542.robot.commands.ExampleCommand;
@@ -9,6 +13,30 @@ package org.usfirst.frc.team5542.robot;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
+
+	Joystick xbox = new Joystick(0);
+	Joystick stick = new Joystick(1);
+
+	// XBox Controller Layout
+	Button aButton = new JoystickButton(xbox, 1);
+	Button bButton = new JoystickButton(xbox, 2);
+	Button xButton = new JoystickButton(xbox, 3);
+	Button yButton = new JoystickButton(xbox, 4);
+	Button lBumper = new JoystickButton(xbox, 5);
+	Button rBumper = new JoystickButton(xbox, 6);
+	Button select = new JoystickButton(xbox, 7);
+	Button start = new JoystickButton(xbox, 8);
+	Button lStick = new JoystickButton(xbox, 9);
+	Button rStick = new JoystickButton(xbox, 10);
+
+	// axis map
+	public static final int lxAxis = 0;
+	public static final int lyAxis = 1;
+	public static final int rxAxis = 4;
+	public static final int ryAxis = 5;
+	public static final int rTrigger = 3;
+	public static final int lTrigger = 2;
+	public static final int dPad = 0;
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
 	//// joystick.
