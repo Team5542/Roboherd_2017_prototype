@@ -40,6 +40,14 @@ public class Robot extends IterativeRobot {
 		//UsbCamera camera = new UsbCamera("camera", 0);
 		//camera.setFPS(11);
 		//camera.setSize(320, 240);
+		//CameraServer server = CameraServer.getInstance();
+		//server.setQuality(10);
+		//server.startAutomaticCapture(camera);
+		//chooser = new SendableChooser();
+		//chooser.addObject("Rock Auto", auto);
+		//chooser.addObject("Low auto", auto);
+		//chooser.addObject("Moat Auto", auto);
+		//Smart
 		
 		
 		
